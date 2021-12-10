@@ -1,0 +1,476 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: #F8FBFF;
+  font-size: 24px; }
+
+.FirstView {
+  height: 90vh;
+  position: relative; }
+  .FirstView__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  .FirstView__title {
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    white-space: nowrap; }
+
+.Navbar {
+  background-color: #FFEBB4;
+  height: 10vh;
+  position: relative; }
+  .Navbar__row {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: center; }
+  .Navbar__element {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    margin: 0 2px; }
+    .Navbar__element:first-child {
+      padding-left: 6%;
+      border-radius: 0 10px 10px 0;
+      box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.25); }
+      .Navbar__element:first-child::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 70px;
+        box-sizing: border-box;
+        top: 0;
+        left: -50px;
+        border: 5vh solid #FFFFFF;
+        cursor: pointer;
+        border-right: 0;
+        border-left: 40px solid transparent;
+        box-shadow: 0 13px 10px -10px rgba(0, 0, 0, 0.25); }
+    .Navbar__element:last-child {
+      padding-right: 6%;
+      border-radius: 10px 0 0 10px;
+      box-shadow: -8px 10px 10px -5px rgba(0, 0, 0, 0.25); }
+      .Navbar__element:last-child::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 70px;
+        box-sizing: border-box;
+        top: 0;
+        right: -50px;
+        border: 5vh solid #FFFFFF;
+        cursor: pointer;
+        border-left: 0;
+        border-right: 40px solid transparent;
+        box-shadow: 0 13px 10px -10px rgba(0, 0, 0, 0.25); }
+  .Navbar__anchor {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+
+.Main {
+  position: relative;
+  width: 100vw; }
+  .Main::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: calc(100% + 50px);
+    width: 5%;
+    top: -50px;
+    left: 3%;
+    background-color: #F8CCB4; }
+  .Main > div {
+    height: 90vh;
+    position: relative;
+    margin-top: 50px; }
+
+.About__pentagon {
+  position: absolute;
+  height: 125vh;
+  top: 20px;
+  right: 0;
+  z-index: -1; }
+.About__cube {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 50px;
+  right: 50px; }
+  .About__cube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #666CEF; }
+  .About__cube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #FF88B1; }
+.About__content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 100px; }
+.About__imgBox {
+  width: 55%;
+  height: 70vh;
+  background-color: white;
+  border-radius: 25px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); }
+.About__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+.About__textBox {
+  color: white;
+  width: 35%; }
+.About__title {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 46px;
+  position: relative;
+  color: white;
+  margin-bottom: 50px; }
+  .About__title::before {
+    font-size: 70px;
+    font-family: serif;
+    position: absolute;
+    opacity: 0.1;
+    content: "About";
+    top: -70%;
+    left: 80%; }
+
+.Topics {
+  text-align: center; }
+  .Topics__cube {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: calc(8% + 50px); }
+    .Topics__cube::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #666CEF; }
+    .Topics__cube::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      background-color: #FF88B1; }
+  .Topics__title {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 46px;
+    position: relative;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 80px; }
+    .Topics__title::before {
+      font-size: 70px;
+      font-family: serif;
+      position: absolute;
+      opacity: 0.1;
+      content: "Topics";
+      top: 20%;
+      left: 80%; }
+  .Topics__list {
+    width: 100%;
+    position: relative; }
+    .Topics__list::after {
+      content: "";
+      background-color: #F8CCB4;
+      display: block;
+      position: absolute;
+      top: 60%;
+      right: 0;
+      height: 20%;
+      width: 40%;
+      z-index: -1; }
+  .Topics__overflow {
+    display: flex;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 40%; }
+  .Topics__card {
+    min-width: 300px;
+    height: 450px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    margin-right: 40px;
+    border-radius: 10px;
+    overflow: hidden; }
+  .Topics__img {
+    height: 45%;
+    width: 100%;
+    box-sizing: border-box; }
+    .Topics__img img {
+      width: 100%; }
+  .Topics__text {
+    box-sizing: border-box;
+    padding: 30px;
+    height: 55%;
+    text-align: start;
+    display: flex;
+    align-items: center; }
+
+.Points {
+  height: 100vh; }
+  .Points__cube--top {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    right: 50px; }
+    .Points__cube--top::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #666CEF; }
+    .Points__cube--top::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60%;
+      right: 50%;
+      height: 100%;
+      width: 100%;
+      background-color: #FF88B1; }
+  .Points__cube--bottom {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    left: calc(8% + 50px); }
+    .Points__cube--bottom::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #666CEF; }
+    .Points__cube--bottom::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      background-color: #FF88B1; }
+  .Points__bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .Points__title {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 46px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: calc(8% + 50px);
+    margin-bottom: 70px;
+    color: #000000; }
+    .Points__title::before {
+      font-size: 70px;
+      font-family: serif;
+      position: absolute;
+      opacity: 0.1;
+      content: "Points";
+      bottom: 40%;
+      left: -20%; }
+  .Points__phrase {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 34px;
+    padding-bottom: 50px; }
+    .Points__phrase img {
+      height: 70px;
+      padding-right: 50px; }
+    .Points__phrase p {
+      display: inline-block; }
+  .Points__text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 70px; }
+    .Points__text--pink {
+      color: #FF88B1; }
+  .Points__table {
+    margin-left: 15%;
+    width: 70%;
+    font-weight: bold; }
+    .Points__table tr {
+      position: relative; }
+      .Points__table tr:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        display: block;
+        background: linear-gradient(to right, blue, pink); }
+    .Points__table th {
+      padding: 20px; }
+
+.Activity {
+  height: auto !important;
+  padding-bottom: 150px; }
+  .Activity__cube {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 50px;
+    right: 50px; }
+    .Activity__cube::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #666CEF; }
+    .Activity__cube::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60%;
+      right: 50%;
+      height: 100%;
+      width: 100%;
+      background-color: #FF88B1; }
+  .Activity__title {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 46px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: calc(8% + 50px);
+    margin-bottom: 50px; }
+    .Activity__title::before {
+      font-size: 70px;
+      font-family: serif;
+      position: absolute;
+      opacity: 0.1;
+      content: "Entry";
+      top: 30%;
+      left: -30%; }
+  .Activity__content {
+    padding-left: 9%; }
+  .Activity__phrase {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 50px; }
+  .Activity__list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative; }
+    .Activity__list::after {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 75%;
+      height: 10px;
+      background-color: #FFEBB4;
+      z-index: -1; }
+  .Activity__card {
+    height: 350px;
+    width: 500px;
+    margin: 0 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px; }
+  .Activity__img {
+    height: 55%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #000000; }
+    .Activity__img img {
+      width: 100%; }
+  .Activity__text {
+    box-sizing: border-box;
+    padding: 10px;
+    height: 45%;
+    text-align: start;
+    display: flex;
+    align-items: center; }
+  .Activity__btn {
+    display: block;
+    width: 35%;
+    padding: 20px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: #1bbc8e;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none; }
+
+.Footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  height: 125px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .Footer p {
+    font-size: small;
+    opacity: 0.3; }
+
+/*# sourceMappingURL=index.css.map */
