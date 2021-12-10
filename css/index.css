@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Hiragino Kaku Gothic ProN";
   background-color: #F8FBFF;
@@ -460,7 +461,15 @@ body {
     background-color: #1bbc8e;
     text-align: center;
     border-radius: 15px;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
+    .Activity__btn::after {
+      content: "※現在準備中です。";
+      color: #000000;
+      position: absolute;
+      top: 120%;
+      left: 0;
+      font-size: small; }
 
 .Footer {
   border-top: 1px solid rgba(0, 0, 0, 0.25);

@@ -466,6 +466,15 @@ body{
         text-align: center;
         border-radius: 15px;
         text-decoration: none; 
+        position: relative;
+        &::after{
+            content: "※現在準備中です。";
+            color: #000000;
+            position: absolute;
+            top: 120%;
+            left: 0;
+            font-size: small;
+        }
     }
 }
 
